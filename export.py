@@ -8,15 +8,15 @@ import xlsxwriter
 def findofferusa():
     options = Options()
     options.headless = False
-    #replace your file path to the chrome driver, to download it go to : https://sites.google.com/chromium.org/driver/
-    DRIVER_PATH = '/Users/timotheemarguier/Downloads/chromedriver'
+    #/! REPLACE your file path to the chrome driver, to download it go to : https://sites.google.com/chromium.org/driver/
+    DRIVER_PATH = '/Users/...YOUR PATH HERE.../chromedriver'
     driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
-    #replace this link with the filters you need to use on mon-vie-via.businessfrance.fr
+    #/! REPLACE this link with the filters you need to use on mon-vie-via.businessfrance.fr
     driver.get('https://mon-vie-via.businessfrance.fr/en/offres/recherche?query=&gerographicZones=2&countriesIds=62')
     time.sleep(1)
+    #Click /accept cookies
     driver.find_element(By.ID, 'onetrust-accept-btn-handler').click()
     time.sleep(2)
-
     #We cath the number of results
     offersnumbertext = driver.find_element(By.XPATH,'//*[@id="__layout"]/div/main/section[2]/div[2]/p').text
     #Transform the text to keep only the int numer
@@ -41,47 +41,26 @@ def findofferusa():
             print('End')
             nbannonces = nbannoncesmax
 
-
     time.sleep(1)
 
     #To get all locations
     offercity = driver.find_elements(By.CSS_SELECTOR, 'p.location')
-
     #To get all details
     annonces = driver.find_elements(By.CSS_SELECTOR, '.figure-item')
-
-
-    #
+    #creating the excel workbook
     workbook = xlsxwriter.Workbook('export-vie.xlsx')
-
-    # The workbook object is then used to add new
-    # worksheet via the add_worksheet() method.
     worksheet = workbook.add_worksheet()
-
-    # Use the worksheet object to write
-    # data via the write() method.
+    #Define headers
     worksheet.write('A1', 'City')
     worksheet.write('B1', 'Details')
-
-    # Finally, close the Excel file
-    # via the close() method.
     row = 1
-
     for z in offercity:
-
         worksheet.write(row, 0, z.text)
         row += 1
-    print('nb de villes', row)
     row=1
     for i in annonces:
         worksheet.write(row, 1, i.text)
         row += 1
-    print('nb d annonces', row)
-
     driver.quit()
-
     workbook.close()
-
-
-
 findofferusa()
