@@ -5,11 +5,10 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 import xlsxwriter
 
-
 def findofferusa():
     options = Options()
     options.headless = False
-    # options.add_argument("--window-size=1920,1200")
+    #replace your file path to the chrome driver, to download it go to : https://sites.google.com/chromium.org/driver/
     DRIVER_PATH = '/Users/timotheemarguier/Downloads/chromedriver'
     driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
     #replace this link with the filters you need to use on mon-vie-via.businessfrance.fr
