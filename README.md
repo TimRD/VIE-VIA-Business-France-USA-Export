@@ -1,21 +1,24 @@
 # VIE-VIA-Business-France-USA-Export
 ***
+####<u>Project state</u> : <i>Usable<i>
+This script allows you to export VIE/VIA offers from mon-vie-via.businessfrance.fr in xlsx format.
+You can then filter offers by cities in excel format.
 
-This python using selenium webdriver script allows you to export VIE/VIA offers from mon-vie-via.businessfrance.frin xlsx format.
-This allows you to filter offers by cities in excel format.
+I used USA for the example but you can choose whatever country/filter you want on the website.
 
-For the example I used USA but you can choose whatever contry/filter you want.
+Unfortunately, you can't filter on cities on the website, this is <u>why this project exists</u> !
+
 
 ![Image text](export.png)
 
-##Google Maps Engine visualisation
+#Google Maps Engine visualisation
 
 You can export this xlsx file into google maps engine to see offers on a map.
 I used the following tutorial to do it : <a href="https://jemeformeaunumerique.fr/2013/12/01/tutoriel-creer-une-carte-google-map-a-partir-dune-liste-dadresses/#:~:text=Importer%20le%20fichier%20Excel%20contenant%20les%20points%20adresses&text=Pour%20cela%2C%20cliquez%20sur%20le,d'une%20autre%20carte%20existante.">Link</a>
 
 ![Image text](google-engine.png)
 
-##How to run the project 
+#How to run the project 
 
 1) Clone the repo
 2) Download the lastest chrome driver version on https://sites.google.com/chromium.org/driver/
@@ -30,12 +33,12 @@ I used the following tutorial to do it : <a href="https://jemeformeaunumerique.f
    
 You can now export your data using this script inside export-vie.xlsx 
 
-##Technology 
+#Technology 
 Python 3.8.5
 
 Selenium 4
 
-##Licence 
+#Licence 
 
 Autor : Timothée Marguier 
 
