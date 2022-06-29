@@ -42,7 +42,6 @@ def findofferusa():
             nbannonces = nbannoncesmax
 
     time.sleep(1)
-
     #To get all locations
     offercity = driver.find_elements(By.CSS_SELECTOR, 'p.location')
     #To get all details
