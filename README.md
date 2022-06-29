@@ -26,7 +26,8 @@ I used the following tutorial to do it : <a href="https://jemeformeaunumerique.f
 4) Run the following command on your folder 'pip install selenium'
 5) Run the following command on your folder 'pip install xlswriter'
 6) Change the driver path link in export.py
-   Optional
+   
+   <u>Optional</u>
 7) Change the link path in export.py to collect cities in the country you want
 
 
