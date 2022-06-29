@@ -22,10 +22,10 @@ from ..utils import keys_to_typing
 class KeyActions(Interaction):
 
     def __init__(self, source=None):
-        if source is None:
+        if not source:
             source = KeyInput(KEY)
         self.source = source
-        super(KeyActions, self).__init__(source)
+        super().__init__(source)
 
     def key_down(self, letter):
         return self._key_action("create_key_down", letter)

@@ -19,10 +19,8 @@
 The Keys implementation.
 """
 
-from __future__ import unicode_literals
 
-
-class Keys(object):
+class Keys:
     """
     Set of special keys codes.
     """
@@ -94,3 +92,4 @@ class Keys(object):
 
     META = '\ue03d'
     COMMAND = '\ue03d'
+    ZENKAKU_HANKAKU = '\ue040'
