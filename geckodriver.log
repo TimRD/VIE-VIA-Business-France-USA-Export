@@ -1,0 +1,30 @@
+1608304836902	geckodriver	INFO	Listening on 127.0.0.1:50899
+1608304836949	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/s0/tprkbtmj0gz2zxcp5b__9zlh0000gn/T/rust_mozprofileh4R5g2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1608304841543	Marionette	INFO	Listening on port 50911
+1608304841618	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: browsingContextFn().currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:330:29
+
+1608304860940	geckodriver	INFO	Listening on 127.0.0.1:51010
+1608304860961	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/s0/tprkbtmj0gz2zxcp5b__9zlh0000gn/T/rust_mozprofilesoMx2E"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1608304864771	Marionette	INFO	Listening on port 51019
+1608304864886	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: browsingContextFn().currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:330:29
+
+1608304922722	Marionette	INFO	Stopped listening on port 50911
+1608304924925	Marionette	INFO	Stopped listening on port 51019
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1608304930094	geckodriver	INFO	Listening on 127.0.0.1:51121
+1608304931101	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/s0/tprkbtmj0gz2zxcp5b__9zlh0000gn/T/rust_mozprofileJR66h1"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1608304933857	Marionette	INFO	Listening on port 51132
+1608304933921	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: browsingContextFn().currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:330:29
+
+1608308011499	Marionette	INFO	Stopped listening on port 51132
