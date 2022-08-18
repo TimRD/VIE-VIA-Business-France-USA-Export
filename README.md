@@ -25,9 +25,8 @@ I used the following tutorial to do it : <a href="https://jemeformeaunumerique.f
 3) Open the repo with PyCharm community (https://www.jetbrains.com/fr-fr/pycharm/download/) or any other Python IDE
 4) Run the following command on your folder 'pip install selenium'
 5) Run the following command on your folder 'pip install xlswriter'
-6) Change the driver path link in export.py
-   
-   <u>Optional</u>
+6) Run the following command on your folder 'pip install webdriver'
+
 7) Change the link path in export.py to collect cities in the country you want
 
 

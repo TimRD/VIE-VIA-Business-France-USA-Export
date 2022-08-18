@@ -4,13 +4,13 @@ import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 import xlsxwriter
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 def findofferusa():
     options = Options()
     options.headless = False
-    #/! REPLACE your file path to the chrome driver, to download it go to : https://sites.google.com/chromium.org/driver/
-    DRIVER_PATH = '/Users/...YOUR PATH HERE.../chromedriver'
-    driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     #/! REPLACE this link with the filters you need to use on mon-vie-via.businessfrance.fr
     driver.get('https://mon-vie-via.businessfrance.fr/en/offres/recherche?query=&gerographicZones=2&countriesIds=62')
     time.sleep(1)
@@ -40,8 +40,8 @@ def findofferusa():
         except NoSuchElementException:
             print('End')
             nbannonces = nbannoncesmax
-
     time.sleep(1)
+
     #To get all locations
     offercity = driver.find_elements(By.CSS_SELECTOR, 'p.location')
     #To get all details
