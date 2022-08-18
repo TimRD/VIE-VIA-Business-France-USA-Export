@@ -21,15 +21,14 @@ I used the following tutorial to do it : <a href="https://jemeformeaunumerique.f
 # How to run the project 
 
 1) Clone the repo
-2) Download the lastest chrome driver version on https://sites.google.com/chromium.org/driver/
-3) Open the repo with PyCharm community (https://www.jetbrains.com/fr-fr/pycharm/download/) or any other Python IDE
-4) Run the following command on your folder 'pip install selenium'
-5) Run the following command on your folder 'pip install xlswriter'
-6) Run the following command on your folder 'pip install webdriver'
-
+2) Open the repo with PyCharm community (https://www.jetbrains.com/fr-fr/pycharm/download/) or any other Python IDE
+3) Run the following command on your folder 'pip install selenium'
+4) Run the following command on your folder 'pip install xlswriter'
+5) Run the following command on your folder 'pip install webdriver'
+   
 7) Change the link path in export.py to collect cities in the country you want
-
-
+For example, if you want to collect all offers, you have to use the following link : https://mon-vie-via.businessfrance.fr/en/offres/recherche?query=
+   
    
 You can now export your data using this script inside export-vie.xlsx 
 

@@ -12,7 +12,7 @@ def findofferusa():
     options.headless = False
     driver = webdriver.Chrome(ChromeDriverManager().install())
     #/! REPLACE this link with the filters you need to use on mon-vie-via.businessfrance.fr
-    driver.get('https://mon-vie-via.businessfrance.fr/en/offres/recherche?query=&gerographicZones=2&countriesIds=62')
+    driver.get('https://mon-vie-via.businessfrance.fr/en/offres/recherche?query=')
     time.sleep(1)
     #Click /accept cookies
     driver.find_element(By.ID, 'onetrust-accept-btn-handler').click()
